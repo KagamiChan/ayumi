@@ -1,0 +1,12 @@
+
+
+url: http://ayumi.kagami.moe
+
+markdown: kramdown
+
+permalink: /:title.html
+
+timezone: Asia/Shanghai
+
+gems:
+  - jekyll-sitemap
