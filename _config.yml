@@ -6,7 +6,17 @@ permalink: /:title.html
 
 timezone: Asia/Shanghai
 
-author: Your Name
+author: 明镜止水
+
+name: 曲终人不见江上数峰青
+
+description: 音楽は魔法ではない
+
+highlighter: pygments
+
+safe: true
+
+lsi: false
 
 gems:
   - jekyll-sitemap
