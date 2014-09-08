@@ -11,3 +11,7 @@ a:visited{
     margin: auto;
     border-radius: 50%;
 }
+
+.inline{
+    display: inline-block;
+}
