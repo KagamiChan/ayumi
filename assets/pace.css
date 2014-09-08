@@ -46,21 +46,26 @@
 
 @-webkit-keyframes praying {
   0% { opacity: 0.3; }
-  100% { opacity: 1; }
+  50% { opacity: 1; }
+    100% { opacity: 0.3; }
 }
 @-moz-keyframes praying {
   0% { opacity: 0.3; }
-  100% { opacity: 1; }
+  50% { opacity: 1; }
+    100% { opacity: 0.3; }
 }
 @-o-keyframes praying {
   0% { opacity: 0.3; }
-  100% { opacity: 1; }
+  50% { opacity: 1; }
+    100% { opacity: 0.3; }
 }
 @-ms-keyframes praying {
   0% { opacity: 0.3; }
-  100% { opacity: 1; }
+  50% { opacity: 1; }
+    100% { opacity: 0.3; }
 }
 @keyframes praying {
   0% { opacity: 0.3; }
-  100% { opacity: 1; }
+  50% { opacity: 1; }
+    100% { opacity: 0.3; }
 }
