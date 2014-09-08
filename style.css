@@ -19,3 +19,9 @@ a:visited{
 .label.tag{
     margin: 0 .25em 0;
 }
+
+
+.desc{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}

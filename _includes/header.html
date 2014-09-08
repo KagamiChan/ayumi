@@ -1,5 +1,5 @@
 <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/assets/normalize.min.css" type="text/css">
@@ -13,7 +13,7 @@
 
 
     <!--SemanticUI-->
-    <link href='/style.css' rel='stylesheet' type='text/css'/>
+    <link href='/style.css' rel='stylesheet' type='text/css' />
 
 
 
@@ -27,16 +27,20 @@
 </head>
 
 
-    <body class="Grid">
+<body class="Grid">
 
-       <div class="ui page grid">
-       <div class="row">
-           <div class="sixteen wide column">
-                <div class="segment"><a href="{{ site.url}}">
-                    <h1 class="ui header">{{site.name}}
-                        <div class="sub header">{{site.description}}</div>
-                    </h1></a>
+    <div class="ui page stackable grid">
+        <div class="row">
+            <div class="ui grid">
+                <div class="sixteen wide column">
+                    <div class="row">
+                        <a href="{{ site.url}}">
+
+                            <h1 class="ui fluid">
+                    </h1>    <img src="/assets/h1_gekkan.png" alt="{{site.name}}" class="ui image">
+                            <div class="sub header desc">{{site.description}}</div>
+                        </a>
+                    </div>
                 </div>
-           </div>
-       </div>
-
+            </div>
+        </div>
