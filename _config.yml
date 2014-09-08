@@ -2,7 +2,7 @@ url: http://ayumi.kagami.moe
 
 markdown: kramdown
 
-permalink: /:title/ #/:title.html
+permalink: /:title/
 
 timezone: Asia/Shanghai
 
