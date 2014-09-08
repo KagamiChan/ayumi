@@ -1,7 +1,4 @@
----
-layout: portal
-title: 首页
----
+--- layout: portal title: 首页 ---
 
 <div class="row">
     <div class="six wide column">
@@ -11,54 +8,35 @@ title: 首页
 
 
 
-   </div>
-
-    <div class="ten wide column">
-    <div class="ui piled segment">
-       <div class="ui selection divided list">
-
-               {% for post in site.posts %}
-               <div class="item">
-
-            <a href="{{post.url}}">
-
-
-            <div class="ui header">{{ post.title }} </div> <div>{{ post.content | truncate: 30 }}</div>
-
-
-
-
-
-
-
-
-            <i class="user icon"></i>{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}
-
-            <i class="book icon"></i>{{ post.categories }}
-
-            <i class="time icon"></i>{{post.date| date:"%Y年%m月%d日"}}
-
-
-                                   {% for tag in post.tags %}
-                                    <i class="tag icon"></i>{{ tag }}
-                                {% endfor %}
-
-
-            </a>
-
-            </div>
-        {% endfor %}
-
-
-
-
-       </div>
-
-
     </div>
 
+    <div class="ten wide column">
+
+        {% for post in site.posts %}
+
+        <div class="ui blue fluid segment">
+
+            <h2 class="ui header"><a href="{{post.url}}" class="ui header">
+                {{ post.title }} </a></h2>
+            <a href="" class="description">
+                {{ post.content | strip | truncatewords: 12 }}</a>
 
 
+            <div class="ui blue message">
+                <i class="time icon"></i>{{post.date| date:"%Y年%m月%d日"}}
 
-</div>
+                <i class="user icon"></i>{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}
+
+                <i class="book icon"></i>{{ post.categories }} {% for tag in post.tags %}
+
+
+                <i class="tag icon"></i>{{ tag }} {% endfor %}
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
 </div>

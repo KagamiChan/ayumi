@@ -15,3 +15,7 @@ a:visited{
 .inline{
     display: inline-block;
 }
+
+.label.tag{
+    margin: 0 .25em 0;
+}

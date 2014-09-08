@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="zh">
-    {% include header.html %}
+{% include header.html %}
 
-    <!--Begin of content><!-->
-
-
+<!--Begin of content><!-->
 
 
-            <div class="row">
-                <div class="sixteen wide column">
-                    <div class="ui blue segment">
-                       <h2 class="ui header">
+
+
+<div class="row">
+    <div class="sixteen wide column">
+        <div class="ui blue segment">
+            <h2 class="ui header">
                                <div class="sub header">{{ page.categories | category_links }}</div>
                                {{page.title}}
                        </h2>
 
-                        <div class="ui large blue ribbon label">
-                            <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%Y年%m月%d日"}}</time>
-                            由 {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%} 为您带来
-                        </div>
+            <div class="ui large blue ribbon label">
+                <time datetime="{{page.date|date:" %F "}}">{{page.date|date:"%Y年%m月%d日"}}</time>
+                由 {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%} 为您带来
+            </div>
 
-                        {{ content }}
-
-
-                        <div class="ui vertically divided grid">
-                            <div class="three column row">
-                                <div class="column">
-                                {% for tag in page.tags %}
-                                    <a class="ui label"><i class="tag icon"></i>{{ tag }}</a>
-                                {% endfor %}
-
-                            <a><i class="url icon"></i>{{site.url}}{{ page.url }}</a>
-                                </div>
-                            </div>
+            {{ content }}
 
 
+            <div class="ui vertically divided grid">
+                <div class="three column row">
+                    <div class="column">
+                        {% for tag in page.tags %}
+                        <a class="ui label"><i class="tag icon"></i>{{ tag }}</a>
+                        {% endfor %}
+
+                        <a><i class="url icon"></i>{{site.url}}{{ page.url }}</a>
+                    </div>
+                </div>
 
 
-                            <div class="three column row">
-                                <div class="left aligned column">
-                                    <a class="ui blue label" href="{{ page.previous.url}}">
-                                       <i class="backward icon"></i>上一篇：
-                                        {% if page.previous %}{{ page.previous.title }}{% else %}{{ "没有了" }}{% endif %}
-                                    </a>
-                                </div>
-                                <div class="column"></div>
-                                <div class="right aligned column column">
-                                    <a class="ui blue label" href="{{ page.next.url}}">下一篇：
+
+
+                <div class="three column row">
+                    <div class="left aligned column">
+                        <a class="ui blue label" href="{{ page.previous.url}}">
+                            <i class="backward icon"></i>上一篇： {% if page.previous %}{{ page.previous.title }}{% else %}{{ "没有了" }}{% endif %}
+                        </a>
+                    </div>
+                    <div class="column"></div>
+                    <div class="right aligned column column">
+                        <a class="ui blue label" href="{{ page.next.url}}">下一篇：
                                         {% if page.next %}{{ page.next.title }}{% else %}{{ "没有了" }}{% endif %}
                                         <i class="forward icon"></i>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
             </div>
 
-    {% include footer.html %}
+
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
 
 
 </html>
