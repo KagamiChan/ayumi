@@ -4,7 +4,7 @@ markdown: kramdown
 
 permalink: /:title/
 
-timezone: Asia/Shanghai
+timezone: null
 
 author: 明镜止水
 
