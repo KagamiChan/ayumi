@@ -10,20 +10,34 @@
             <div class="row">
                 <div class="sixteen wide column">
                     <div class="ui blue segment">
-                        <div class="ui blue ribbon label">
+                       <h2 class="ui header">
+                               <div class="sub header">{{ page.categories | category_links }}</div>
+                               {{page.title}}
+                       </h2>
+
+                        <div class="ui large blue ribbon label">
                             <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%Y年%m月%d日"}}</time>
                             由 {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%} 为您带来
                         </div>
-                       <h2 class="ui dividing header">{{page.title}}
 
-                               <div class="sub header">分类属于{{ page.categories | category_links }}</div>
-
-                       </h2>
                         {{ content }}
+
+
+                        <div>
+                        {% for tag in page.tags %}
+                            <a class="ui label"><i class="tag icon"></i>{{ tag }}</a>
+                        {% endfor %}
+
+                        <a><i class="url icon"></i>{{site.url}}{{ page.url }}</a>
+                        </div>
+
+
+
+
                     </div>
                 </div>
             </div>
-        </div>
+
     {% include footer.html %}
 
 

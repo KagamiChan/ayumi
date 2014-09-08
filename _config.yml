@@ -2,7 +2,7 @@ url: http://ayumi.kagami.moe
 
 markdown: kramdown
 
-permalink: /:title.html
+permalink: /:title/ #/:title.html
 
 timezone: Asia/Shanghai
 
@@ -24,7 +24,7 @@ gems:
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
+      path: ""
+      type: "posts"
     values:
-      categories: 芦苇荡
+      category: 芦苇荡
