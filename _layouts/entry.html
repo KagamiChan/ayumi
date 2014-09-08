@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+    {% include header.html %}
+
+    <!--Begin of content><!-->
+    <body class="Grid">
+       <div class="ui grid">
+       <div class="row">
+           <div class="sixteen wide column">
+                <div class="segment">
+                    <h1 class="ui dividing header">{{site.data.global.title}}</h1>
+                </div>
+           </div>
+       </div>
+
+
+
+            <div class="row">
+                <div class="sixteen wide column">
+                    <div class="ui blue segment">
+                        <div class="ui blue ribbon label">
+                            <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%Y年%m月%d日"}}</time>
+                            由 {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%} 为您带来
+                        </div>
+                       <h2 class="ui dividing header">{{page.title}}</h2>
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% include footer.html %}
+
+
+</html>

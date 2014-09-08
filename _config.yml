@@ -6,5 +6,7 @@ permalink: /:title.html
 
 timezone: Asia/Shanghai
 
+author: Your Name
+
 gems:
   - jekyll-sitemap
