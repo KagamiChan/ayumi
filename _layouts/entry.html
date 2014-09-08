@@ -3,15 +3,7 @@
     {% include header.html %}
 
     <!--Begin of content><!-->
-    <body class="Grid">
-       <div class="ui grid">
-       <div class="row">
-           <div class="sixteen wide column">
-                <div class="segment">
-                    <h1 class="ui dividing header">{{site.name}}</h1>
-                </div>
-           </div>
-       </div>
+
 
 
 
@@ -22,7 +14,11 @@
                             <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%Y年%m月%d日"}}</time>
                             由 {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%} 为您带来
                         </div>
-                       <h2 class="ui dividing header">{{page.title}}</h2>
+                       <h2 class="ui dividing header">{{page.title}}
+
+                               <div class="sub header">分类属于{{ page.categories | category_links }}</div>
+
+                       </h2>
                         {{ content }}
                     </div>
                 </div>
