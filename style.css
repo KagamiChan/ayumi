@@ -39,3 +39,7 @@ code:hover{
     background-color: #29d;
     color: white;
 }
+
+.misc .label{
+    margin-bottom: 0.375rem;
+}
