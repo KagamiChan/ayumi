@@ -14,6 +14,34 @@ title: 首页
 
         </div>
 
+        <div class="ui secondary menu">
+            <a href="{{site.url}}/feed.xml" class="item"><i class="rss icon"></i>RSS</a>
+            <a href="https://github.com/KagamiChan/ayumi.git" class="item"><i class="github alternate icon"></i>Source</a>
+            <a href="http://weibo.com/p/1005051615104427/weibo?from=page_100505&mod=TAB#place" class="item"><i class="weibo icon"></i>Weibo</a>
+        </div>
+
+        <form onsubmit="return ayumisearch(this)" method="post" target="none">
+            <div class="small ui icon input">
+                <input name="q" id="s-input" type="text" placeholder="搜索日志"><i class="green search icon"></i>
+            </div>
+        </form>
+
+
+        <script>
+            $("#s-input").focus(function(){
+                $(this).parent().addClass("fluid")
+            })
+
+            $("#s-input").blur(function(){
+                $(this).parent().removeClass("fluid")
+            })
+
+            function ayumisearch(qs){
+                window.open("https://www.google.com/search?q="+qs.q.value+"+site:{{site.url}}&oq="+qs.q.value+"+site:{{site.url}}")
+            }
+
+        </script>
+
 
 
     </div>
