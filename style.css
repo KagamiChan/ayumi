@@ -26,3 +26,16 @@ a:visited{
     font-size: 1.5rem;
 }
 
+.content{
+    font-size: 125%;
+    line-height: 2rem;
+}
+
+code{
+    color: #29d;
+}
+
+code:hover{
+    background-color: #29d;
+    color: white;
+}

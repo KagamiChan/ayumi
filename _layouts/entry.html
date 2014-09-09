@@ -9,18 +9,22 @@
 
 <div class="row">
     <div class="sixteen wide column">
-        <div class="ui blue segment">
+<!--        <div class="ui blue segment">-->
+
             <h2 class="ui header">
                                <div class="sub header">{{ page.categories | category_links }}</div>
                                {{page.title}}
                        </h2>
 
-            <div class="ui large blue ribbon label">
+            <div class="ui large blue image label">
+
+               <img src="{{site.data.global.gravatar}}?s=40" alt="{% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}">
+
                 <time datetime="{{page.date|date:" %F "}}">{{page.date|date:"%Y年%m月%d日"}}</time>
                 由 {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%} 创造
             </div>
 
-            {{ content }}
+            <div class="content">{{ content }}</div>
 
 
             <div class="ui vertically divided grid">
@@ -54,7 +58,7 @@
             </div>
 
 
-        </div>
+<!--        </div>-->
     </div>
 </div>
 

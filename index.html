@@ -50,12 +50,12 @@ title: 首页
 
         {% for post in site.posts %}
 
-        <div class="ui blue fluid segment">
+        <div class="ui vertical fluid segment">
 
             <h2 class="ui header"><a href="{{post.url}}" class="ui header">
                 {{ post.title }} </a></h2>
             <a href="" class="description">
-                {{ post.content | strip | truncatewords: 12 }}</a>
+                {{ post.content | strip | truncate: 64 }}</a>
 
 
             <div class="ui blue message">
