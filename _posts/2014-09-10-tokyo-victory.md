@@ -183,7 +183,7 @@ date: 2014-09-10 19:30:00 +0800
 - 増田惠子
 - 吉井和哉
 
-![AKB48 in 天国オン・ザ・ビーチ]({{ site.url }}/image/Southern All Stars - Tengoku on the Beach [1440x1080 h264 M-ON! HD].ts_snapshot_02.38_[2014.08.23_15.12.09].jpg)
+<image class="ui image" src="{{ site.url }}/image/Southern All Stars - Tengoku on the Beach [1440x1080 h264 M-ON! HD].ts_snapshot_02.38_[2014.08.23_15.12.09].jpg"></image>
 
 SAS 成功地教会了我什么叫做低调地秀资历和人脉……
 
